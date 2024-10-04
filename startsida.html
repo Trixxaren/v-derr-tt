@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Väderapp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- länkar för Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+ 
+ <header>
+    <ul>
+        <li><a href="./info.html">Mer info</a></li>
+        <li><a href="./about.html">Kontakta oss</a></li>
+        <li><a href="./contacts.html">Om oss</a></li>
+    </ul>
+    <p id="klocka"></p>
+    <br>
+    <h1>Väderappens app</h1>
+    
+ </header>
+ 
+ <body>
+
+<div class="grid-container">
+  <div class="grid-item">Idag
+    <div id="weathercode"></div>
+  </div>
+  <div class="grid-item">
+    <table>
+        <tr>
+            <th> Temp just nu °C</th>
+            <th> Max temp °C</th>
+            <th> Min temp °C</th>
+        </tr>
+        <tr>
+            <td id="temperatur"></td>
+            <td id="temperaturMax"></td>
+            <td id="temperaturMin"></td>
+        </tr>
+    </table>
+  </div>
+  <div class="grid-item"><strong>Stockholm</strong> & mer info om nästkommande 5 dagar
+    <br>
+    <br>
+    <button onclick="document.location='./femdagar.html'">Detaljer</button>
+  </div>  
+  <div class="grid-item">Imorgon
+        <div id="weathercode1"></div>
+  </div>
+  <div class="grid-item">
+    <table>
+        <tr>
+            <th> Max temp °C</th>
+            <th> Min temp °C</th>
+        </tr>
+        <tr>
+            <td id="temperaturMax1"></td>
+            <td id="temperaturMin1"></td>
+        </tr>
+    </table>
+  </div> 
+  <div class="grid-item"><strong>Stockholm</strong> temp 5 dagar
+    <br>
+    <br>
+    <button onclick="document.location='./femdagartvå.html'">Detaljer</button>
+  </div> 
+  <div id="Map_enoWaomLoMocoga"></div>
+  <div class="grid-item">Övermorgon
+    <div id="weathercode2"></div>
+  </div>
+  <div class="grid-item">
+    <table>
+        <tr>
+            <th> Max temp °C</th>
+            <th> Min temp °C</th>
+        </tr>
+        <tr>
+            <td id="temperaturMax2"></td>
+            <td id="temperaturMin2"></td>
+        </tr>
+    </table>
+  </div> 
+  <div class="grid-item"><strong>Stockholm</strong> temp 5 dagar
+    <br>
+    <br>
+    <button onclick="document.location='./femdagartre.html'">Detaljer</button>
+  </div> 
+  <div class="grid-item"><div class="container">
+    <label for="citySelect">Välj stad för mer info</label>
+    <br>
+    <br>
+    <select name="cities" id="citySelect">
+      <option value="" selected disabled hidden>Välj stad..</option>
+      <option value='{"lat":57.7089, "lon":11.9746}'>Göteborg</option>
+      <option value='{"lat":55.6050, "lon":13.0038}'>Malmö</option>
+      <option value='{"lat":67.8557, "lon":20.2251}'>Kiruna</option>
+    </select>
+  </div></div> 
+</div>
+
+
+
+
+<div id="Map_enoWaomLoMocoga"></div>
+<script src="https://www.tutiempo.net/s-widget/fm/enoWaomLoMocoga.js"></script>
+
+<script src="main.js"></script>
+</body>
+
+
+<footer>Made of RV</footer>
+</html>

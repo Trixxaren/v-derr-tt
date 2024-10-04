@@ -1,0 +1,182 @@
+
+.weather-display {
+    font-size: 45px;
+}
+
+#Map_enoWaomLoMocoga {
+    grid-column-start: 4 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 95%;
+    margin: 20px;
+}
+
+
+
+.grid-item {
+   
+        border: 3px black;
+        border-radius: 7px;
+        background-color: yellowgreen;
+        padding: 1em;
+        text-align: center;
+        color: darkgreen;
+}
+
+.lobster-regular { 
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+body {
+    background-color:rgb(75, 74, 74) ;
+    margin: 0%;
+    font-family: lobster;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+    background-color: rgb(75, 74, 74);
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: yellowgreen;
+}
+
+
+
+h1 {
+    text-align: left;
+    font-size: 40px;
+    padding-left: 20px;
+    background-color: rgb(75, 74, 74);
+}
+
+#klocka {
+    text-align: right;
+    color: #fff;
+    
+}
+
+
+
+button {
+    background-color: #000000b4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+      }
+      
+button:hover {
+        background-color: rgb(75, 74, 74);
+        color: white;
+        cursor: pointer;
+      }
+
+#weathercode {
+    font-size: 70px;
+    
+}
+#weathercode1 {
+    font-size: 70px;
+    
+}
+#weathercode2 {
+    font-size: 70px;
+    
+}
+
+table {
+    width:100%
+}
+
+th {
+    font-size: 15px;
+}
+
+td {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .flex-container > div {
+    background-color: rgb(75, 74, 74);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+.grid-box  {
+    display: grid;
+    grid-template-columns: 0.2fr repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(4, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: 95%;
+    margin: 20px;
+    }
+
+.grid-box {
+   
+    border: 3px black;
+    border-radius: 7px;
+    background-color: yellowgreen;
+    padding: 1em;
+    text-align: center;
+    color: darkgreen;
+}
+
+footer {
+    margin:30px
+}
